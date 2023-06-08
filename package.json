@@ -1,0 +1,31 @@
+{
+  "name": "ts-template",
+  "version": "0.0.0",
+  "description": "ts项目模板",
+  "main": "src/app.ts",
+  "repository": "https://github.com/litfBlog/ts-template",
+  "author": "ltfei <ltfei@ltfei.cn>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "cz": "git-cz",
+    "format": "prettier --write --cache ."
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-angular": "^17.6.5",
+    "@commitlint/cz-commitlint": "^17.5.0",
+    "commitizen": "^4.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
